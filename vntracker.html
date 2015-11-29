@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VN TRACKER</title>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="dist/src/css/index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_left"></div>
+            <div class="nav_right"></div>
+            <div class="nav_center"></div>
+        </nav>
+    </header>
+    <div class="map_container">
+        <div class="map_center">
+            <div id="map"></div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <div class="footer_left"></div>
+            <div class="footer_right"></div>
+            <div class="footer_center">
+                <div class="alert_container">
+                    <a href="#" class="vn_active">vn</a>
+                    <a href="chief.html" class="chief">chief</a>
+                    <a href="infoboard.html">info</a>
+                </div>
+                <p class="author">Yang Xie</p>
+            </div>
+        </nav>
+    </footer>
+    <script src="stylesheets/jquery.min.js"></script>
+    <script src="dist/src/js/index.js"></script>
+    <script src="dist/src/js/vn.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCCQTf6WqRTte48MqmjThgU1p8FmIYKOAM&signed_in=true&callback=initMap" async defer>
+    </script>
+</body>
+
+</html>
