@@ -13,6 +13,19 @@
         <img src="dist/img/click.gif" alt="infomartion">
         <a href="chief.html"><img src="dist/img/hudflash_b.gif" alt="Click Enter"></a>
     </div>
+    <audio src='stylesheets/welcome sound.mp3' id='click_audio_welcome'></audio>
+    <script src="stylesheets/jquery.min.js"></script>
+    <script>
+    $('.initPage').delegate('a', 'click', function(event) {
+        var _play = document.getElementById('click_audio_welcome');
+        event.preventDefault();
+        _play.play();
+        setTimeout(function() {
+            var target = event.target.parentNode;
+            window.location.href = target.getAttribute('href');
+        }, 1000);
+    });
+    </script>
 </body>
 
 </html>
